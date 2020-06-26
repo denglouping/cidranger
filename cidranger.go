@@ -95,5 +95,6 @@ type Ranger interface {
 // NewPCTrieRanger returns a versionedRanger that supports both IPv4 and IPv6
 // using the path compressed trie implemention.
 func NewPCTrieRanger() Ranger {
+	fmt.Println("here")
 	return newVersionedRanger(newPrefixTree)
 }
